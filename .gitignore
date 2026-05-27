@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Data (raw DAEN exports are too large and cannot be redistributed)
+data/raw/*.xlsx
+data/raw/*.xls
+data/raw/*.csv
+data/processed/*.parquet
+!data/processed/product_dictionary_prespec.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.venv/
+env/
+venv/
