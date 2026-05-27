@@ -1,0 +1,32 @@
+{
+  "title": "Drug-Role-Stratified Disproportionality Analysis of Australian Antivenoms and Tropical Medicines in the TGA DAEN — Analysis Code",
+  "upload_type": "software",
+  "description": "Reproducibility code for a READUS-PV 2024-compliant disproportionality analysis of the TGA Database of Adverse Event Notifications (DAEN) for Australian antivenoms (8 products) and a tropical-medicine basket (7 products). Includes data acquisition, cleaning, PRR/ROR/IC/EBGM computation, drug-role stratification, PELT change-point detection, sensitivity analyses, and clinical face-validity review.",
+  "creators": [
+    {
+      "name": "Farquhar, Hayden",
+      "orcid": "0009-0002-6226-440X",
+      "affiliation": "Independent researcher, Finley, NSW, Australia"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "pharmacovigilance",
+    "disproportionality analysis",
+    "READUS-PV",
+    "DAEN",
+    "TGA",
+    "antivenom",
+    "signal detection",
+    "drug safety",
+    "tropical medicine",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17605/OSF.IO/TWGX4",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
+    }
+  ]
+}
