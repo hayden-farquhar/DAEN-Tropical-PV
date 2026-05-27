@@ -5,8 +5,10 @@ Code repository for: **Drug-Role-Stratified Disproportionality Analysis of Austr
 Hayden Farquhar MBBS MPHTM, Independent researcher, Finley, NSW, Australia
 
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0002--6226--440X-green)](https://orcid.org/0009-0002-6226-440X)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20404265.svg)](https://doi.org/10.5281/zenodo.20404265)
 
 - **Pre-registration:** https://doi.org/10.17605/OSF.IO/TWGX4
+- **Code archive:** https://doi.org/10.5281/zenodo.20404265
 - **Preprint:** to be posted
 
 ## Overview
@@ -101,6 +103,7 @@ If you use this code, please cite:
 Farquhar H. Drug-Role-Stratified Disproportionality Analysis of Australian
 Antivenoms and Tropical Medicines in the TGA Database of Adverse Event
 Notifications: A Pre-Registered READUS-PV-Compliant Framework. 2026.
+Code: https://doi.org/10.5281/zenodo.20404265
 Pre-registration: https://doi.org/10.17605/OSF.IO/TWGX4
 ```
 
