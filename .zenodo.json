@@ -1,12 +1,12 @@
 {
-  "title": "Drug-Role-Stratified Disproportionality Analysis of Australian Antivenoms and Tropical Medicines in the TGA DAEN — Analysis Code",
+  "title": "Disproportionality and Temporal Analysis of Australian Antivenoms, Tropical Medicines and Japanese Encephalitis Vaccine in the TGA DAEN — Analysis Code",
   "upload_type": "software",
-  "description": "Reproducibility code for a READUS-PV 2024-compliant disproportionality analysis of the TGA Database of Adverse Event Notifications (DAEN) for Australian antivenoms (8 products) and a tropical-medicine basket (7 products). Includes data acquisition, cleaning, PRR/ROR/IC/EBGM computation, drug-role stratification, PELT change-point detection, sensitivity analyses, and clinical face-validity review.",
+  "description": "Reproducibility code for pre-registered, READUS-PV 2024-compliant analyses of the TGA Database of Adverse Event Notifications (DAEN). (1) Disproportionality analysis of Australian antivenoms (8 products) and a tropical-medicine basket (7 products): data acquisition, cleaning, PRR/ROR/IC/EBGM computation, drug-role stratification, sensitivity analyses, and clinical face-validity review. (2) Within-product temporal analysis of Japanese encephalitis (JEV) vaccine adverse event reports around the 2022 Australian outbreak: PELT change-point detection, Poisson, quasi-Poisson and negative-binomial structural-break models, per-quarter Preferred-Term reporting rates, post-2022 sub-period composition (administrative vaccination errors vs classical reactions), and the scripts that generate the JEV paper's figures. Aggregate JEV output tables and figures are included; raw DAEN exports are not redistributed.",
   "creators": [
     {
       "name": "Farquhar, Hayden",
       "orcid": "0009-0002-6226-440X",
-      "affiliation": "Independent researcher, Finley, NSW, Australia"
+      "affiliation": "Independent Researcher"
     }
   ],
   "license": "MIT",
@@ -20,7 +20,11 @@
     "signal detection",
     "drug safety",
     "tropical medicine",
-    "reproducibility"
+    "reproducibility",
+    "Japanese encephalitis vaccine",
+    "vaccination error",
+    "adverse events following immunisation",
+    "change-point analysis"
   ],
   "related_identifiers": [
     {

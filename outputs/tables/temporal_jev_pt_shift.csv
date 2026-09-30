@@ -1,0 +1,188 @@
+reaction_pt,pre_n,post_n,pre_prr,post_prr,pre_signal,post_signal,shift_type
+Incorrect route of product administration,1,25,12.523167901789057,371.00202429149795,False,True,gained_signal
+Contraindication to vaccination,1,12,1371.2868852459017,225.56923076923076,False,True,gained_signal
+Exposure during pregnancy,1,5,3.027123366988745,15.24116424116424,False,True,gained_signal
+Abdominal pain upper,1,0,0.9256070774525155,,False,False,lost_post_2022
+Abortion spontaneous,1,0,4.009610775572812,,False,False,lost_post_2022
+Amnesia,1,0,1.4472684804706084,,False,False,lost_post_2022
+Angioedema,3,0,1.842302129752667,,False,False,lost_post_2022
+Asthenia,6,0,3.6078585009758433,,False,False,lost_post_2022
+Ataxia,2,0,4.356749436841626,,False,False,lost_post_2022
+Bradycardia,1,0,1.3041244747940102,,False,False,lost_post_2022
+Bronchitis,1,0,7.179512488198438,,False,False,lost_post_2022
+Bronchospasm,3,0,3.3886825829799876,,False,False,lost_post_2022
+Chest discomfort,2,0,0.8894353074401827,,False,False,lost_post_2022
+Chest pain,6,0,1.0865264194751285,,False,False,lost_post_2022
+Chromaturia,1,0,7.835925058548009,,False,False,lost_post_2022
+Circulatory collapse,1,0,3.622950819672131,,False,False,lost_post_2022
+Cold sweat,2,0,3.2514211861195057,,False,False,lost_post_2022
+Coma,1,0,5.335746635198061,,False,False,lost_post_2022
+Confusional state,2,0,0.9612946969827562,,False,False,lost_post_2022
+Depersonalisation/derealisation disorder,2,0,10.388537009438648,,False,False,lost_post_2022
+Dermatitis bullous,1,0,3.078085039833674,,False,False,lost_post_2022
+Disturbance in attention,1,0,2.001878664592557,,False,False,lost_post_2022
+Dry mouth,2,0,2.7140759727776382,,False,False,lost_post_2022
+Dysaesthesia,1,0,54.85147540983606,,False,False,lost_post_2022
+Dysarthria,1,0,2.4465421681461224,,False,False,lost_post_2022
+Dysphagia,5,0,5.578872600674946,,False,False,lost_post_2022
+Electrocardiogram abnormal,1,0,3.215209578536698,,False,False,lost_post_2022
+Encephalitis,1,0,21.426357581967213,,False,False,lost_post_2022
+Epistaxis,1,0,1.426937445625288,,False,False,lost_post_2022
+Erythema multiforme,4,0,12.726560419915561,,True,False,lost_post_2022
+Extrasystoles,1,0,7.99584189647756,,False,False,lost_post_2022
+Extravasation,1,0,65.29937548790008,,False,False,lost_post_2022
+Face oedema,5,0,4.55577038287675,,False,False,lost_post_2022
+Fall,1,0,0.9306324297562957,,False,False,lost_post_2022
+Feeling hot,1,0,1.0835929555479271,,False,False,lost_post_2022
+Flatulence,2,0,5.194268504719324,,False,False,lost_post_2022
+Gravitational oedema,1,0,2.5370710180312703,,False,False,lost_post_2022
+Haematuria,1,0,2.9176316707359606,,False,False,lost_post_2022
+Haemorrhage urinary tract,1,0,88.47012162876784,,False,False,lost_post_2022
+Heart rate irregular,1,0,5.540553071700613,,False,False,lost_post_2022
+Hepatic function abnormal,2,0,1.3097295943131821,,False,False,lost_post_2022
+Herpes zoster,1,0,1.468973631757795,,False,False,lost_post_2022
+Hypoaesthesia oral,1,0,5.631568317231629,,False,False,lost_post_2022
+Hypotension,3,0,1.219644428027781,,False,False,lost_post_2022
+Injection site inflammation,6,0,32.45649432534679,,True,False,lost_post_2022
+Injection site reaction,14,0,1.3299169681301393,,False,False,lost_post_2022
+Injection site swelling,2,0,2.6472719792391928,,False,False,lost_post_2022
+Insomnia,3,0,1.44548863518542,,False,False,lost_post_2022
+Intussusception,1,0,12.40983606557377,,False,False,lost_post_2022
+Lethargy,2,0,0.3747965521683366,,False,False,lost_post_2022
+Leukopenia,1,0,2.1227351164797237,,False,False,lost_post_2022
+Lip swelling,1,0,1.2768034313276553,,False,False,lost_post_2022
+Lymphadenitis,2,0,37.06180770934869,,False,False,lost_post_2022
+Malaise,17,0,3.6390691615954305,,True,False,lost_post_2022
+Migraine,1,0,1.0597271137912687,,False,False,lost_post_2022
+Miliaria,1,0,76.18260473588343,,False,False,lost_post_2022
+Muscle twitching,1,0,2.1409631307508223,,False,False,lost_post_2022
+Muscular weakness,1,0,1.3153831033533827,,False,False,lost_post_2022
+Musculoskeletal stiffness,1,0,1.9205698672911786,,False,False,lost_post_2022
+Myocarditis,1,0,0.9427891957689252,,False,False,lost_post_2022
+Nasal congestion,1,0,4.305453328872533,,False,False,lost_post_2022
+Night sweats,1,0,4.871356608333576,,False,False,lost_post_2022
+Nystagmus,1,0,13.249148649718856,,False,False,lost_post_2022
+Ocular hyperaemia,1,0,3.7776498216140544,,False,False,lost_post_2022
+Oedema,2,0,3.177953384115647,,False,False,lost_post_2022
+Oedema mouth,3,0,101.57680631451124,,True,False,lost_post_2022
+Optic neuritis,1,0,14.434598792062122,,False,False,lost_post_2022
+Pain in extremity,1,0,0.38720510666268576,,False,False,lost_post_2022
+Pallor,2,0,1.8102797164962396,,False,False,lost_post_2022
+Palpitations,2,0,0.7171064898658134,,False,False,lost_post_2022
+Pancytopenia,1,0,2.523066946174612,,False,False,lost_post_2022
+Periorbital oedema,3,0,5.168166652936815,,False,False,lost_post_2022
+Pharyngitis,2,0,6.0810948347933556,,False,False,lost_post_2022
+Photophobia,6,0,14.959493293591656,,True,False,lost_post_2022
+Prostate cancer,1,0,16.723010795681727,,False,False,lost_post_2022
+Rash erythematous,6,0,2.4902304211487323,,False,False,lost_post_2022
+Rash maculo-papular,5,0,2.411265843583439,,False,False,lost_post_2022
+Rash vesicular,1,0,4.744937319189971,,False,False,lost_post_2022
+Rhinitis,2,0,5.218979582286972,,False,False,lost_post_2022
+Swelling,2,0,2.7688781125611337,,False,False,lost_post_2022
+Swelling face,2,0,2.4630208985108246,,False,False,lost_post_2022
+Swollen tongue,1,0,1.4487975544066578,,False,False,lost_post_2022
+Throat tightness,3,0,3.9728253556134288,,False,False,lost_post_2022
+Thrombocytopenia,1,0,0.6973236131430978,,False,False,lost_post_2022
+Tongue oedema,2,0,4.995580638418585,,False,False,lost_post_2022
+Unresponsive to stimuli,1,0,4.897453161592505,,False,False,lost_post_2022
+Vertigo,2,0,2.1984559282499423,,False,False,lost_post_2022
+Vision blurred,2,0,1.5908200524894451,,False,False,lost_post_2022
+Visual acuity reduced transiently,1,0,914.191256830601,,False,False,lost_post_2022
+Visual field defect,2,0,17.808920587609112,,False,False,lost_post_2022
+Weight decreased,1,0,1.1655647133411828,,False,False,lost_post_2022
+White matter lesion,1,0,304.7304189435337,,False,False,lost_post_2022
+Headache,48,7,3.0282375088242217,0.8489164598842018,True,False,lost_signal
+Urticaria,32,3,4.997856529370028,0.8327685113311498,True,False,lost_signal
+Injection site pain,12,1,4.94603024434951,0.5504373615647408,True,False,lost_signal
+Vaccination error,0,23,,5.8293171996542785,False,True,new_post_2022
+Inappropriate schedule of product administration,0,7,,3.2502771004211928,False,False,new_post_2022
+Product administered to patient of inappropriate age,0,7,,4.73033138221874,False,False,new_post_2022
+Overdose,0,5,,9.184414933600602,False,True,new_post_2022
+Product prescribing issue,0,5,,40.28021978021978,False,True,new_post_2022
+Expired product administered,0,4,,4.1849578992436145,False,False,new_post_2022
+Incorrect dose administered,0,4,,7.646414602346807,False,False,new_post_2022
+Wrong product administered,0,4,,2.181520607052522,False,False,new_post_2022
+Neck pain,0,3,,5.629847689747856,False,False,new_post_2022
+Wrong technique in product usage process,0,2,,6.031262854792268,False,False,new_post_2022
+Acute kidney injury,0,1,,1.6733622460625428,False,False,new_post_2022
+Adverse event following immunisation,0,1,,1.914849157633538,False,False,new_post_2022
+Anuria,0,1,,75.1897435897436,False,False,new_post_2022
+Aphthous ulcer,0,1,,93.9871794871795,False,False,new_post_2022
+Blood glucose decreased,0,1,,20.88603988603989,False,False,new_post_2022
+Blood pressure decreased,0,1,,5.126573426573427,False,False,new_post_2022
+Blood pressure increased,0,1,,2.2114630467571645,False,False,new_post_2022
+COVID-19,0,1,,0.853782099807838,False,False,new_post_2022
+Cerebral haemorrhage,0,1,,13.114490161001791,False,False,new_post_2022
+Constipation,0,1,,1.7622596153846155,False,False,new_post_2022
+Contraindicated product administered,0,1,,12.963748894783379,False,False,new_post_2022
+Coordination abnormal,0,1,,16.345596432552956,False,False,new_post_2022
+Dissociation,0,1,,31.329059829059833,False,False,new_post_2022
+Electric shock sensation,0,1,,9.477698771816419,False,False,new_post_2022
+Feeling of body temperature change,0,1,,7.51897435897436,False,False,new_post_2022
+Flank pain,0,1,,18.7974358974359,False,False,new_post_2022
+Gait disturbance,0,1,,2.1942532175995213,False,False,new_post_2022
+Hyperaemia,0,1,,281.9615384615385,False,False,new_post_2022
+Injection site discharge,0,1,,59.36032388663968,False,False,new_post_2022
+Injection site mass,0,1,,6.096465696465697,False,False,new_post_2022
+Lactic acidosis,0,1,,15.03794871794872,False,False,new_post_2022
+Lip erythema,0,1,,86.75739644970415,False,False,new_post_2022
+Molluscum contagiosum,0,1,,1127.846153846154,False,False,new_post_2022
+Mucosal ulceration,0,1,,563.923076923077,False,False,new_post_2022
+Noninfective conjunctivitis,0,1,,,False,False,new_post_2022
+Oliguria,0,1,,140.98076923076925,False,False,new_post_2022
+Oral disorder,0,1,,93.9871794871795,False,False,new_post_2022
+Oxygen saturation decreased,0,1,,2.6413258872275267,False,False,new_post_2022
+Paraesthesia oral,0,1,,2.3447944986406526,False,False,new_post_2022
+Photosensitivity reaction,0,1,,17.08857808857809,False,False,new_post_2022
+Pneumonia,0,1,,1.115574830708362,False,False,new_post_2022
+Product administered at inappropriate site,0,1,,5.555892383478591,False,False,new_post_2022
+SARS-CoV-2 test positive,0,1,,2.9524768425291987,False,False,new_post_2022
+Seasonal allergy,0,1,,34.17715617715618,False,False,new_post_2022
+Seizure,0,1,,1.2088383213785145,False,False,new_post_2022
+Shoulder injury related to vaccine administration,0,1,,2.660014513788099,False,False,new_post_2022
+Skin oedema,0,1,,281.9615384615385,False,False,new_post_2022
+Sleep disorder,0,1,,2.523145758045087,False,False,new_post_2022
+Strawberry tongue,0,1,,375.948717948718,False,False,new_post_2022
+Tachypnoea,0,1,,5.696192696192696,False,False,new_post_2022
+Tongue discomfort,0,1,,26.853479853479854,False,False,new_post_2022
+VIth nerve paralysis,0,1,,70.49038461538463,False,False,new_post_2022
+Vaccination site erythema,0,1,,1.8734985944288274,False,False,new_post_2022
+Vaccination site rash,0,1,,8.675739644970415,False,False,new_post_2022
+Vestibular neuronitis,0,1,,40.28021978021979,False,False,new_post_2022
+Wheezing,0,1,,2.2467054857493105,False,False,new_post_2022
+Pyrexia,19,11,1.4519463244822723,1.640611966716172,False,False,stable_non_signal
+Vomiting,6,11,0.7587698908540056,2.50936644261887,False,False,stable_non_signal
+Rash,12,6,1.1340759905548463,1.1809907370116794,False,False,stable_non_signal
+Abdominal pain,2,4,0.46421356981919487,1.5879565700051446,False,False,stable_non_signal
+Arthralgia,4,4,0.6743895667281744,0.9889050011803191,False,False,stable_non_signal
+Diarrhoea,7,4,1.2260052617308017,1.2242563406742513,False,False,stable_non_signal
+Dizziness,15,4,1.707137793898956,0.8349777189310783,False,False,stable_non_signal
+Myalgia,14,4,1.5943210059745565,0.8309789308131545,False,False,stable_non_signal
+Dyspnoea,5,3,0.6783176124089343,0.48191688670252975,False,False,stable_non_signal
+Hypersensitivity,1,3,0.750978578995565,2.639265570622825,False,False,stable_non_signal
+Pain,5,3,1.9520098010617817,1.6005385343133687,False,False,stable_non_signal
+Cough,1,2,0.34081940729362536,1.0818668142409151,False,False,stable_non_signal
+Fatigue,10,2,1.2756750409283237,0.3310379083786774,False,False,stable_non_signal
+Influenza like illness,4,2,1.91487084691346,1.503794871794872,False,False,stable_non_signal
+Lymphadenopathy,6,2,3.1475597978100267,0.8845852187028659,False,False,stable_non_signal
+Nausea,26,2,2.077586330423253,0.32210371379298985,False,False,stable_non_signal
+Oedema peripheral,2,2,2.0444083268667934,8.232453677709152,False,False,stable_non_signal
+Paraesthesia,12,2,2.8897080732199174,0.6792208093021102,False,False,stable_non_signal
+Peripheral swelling,4,2,4.6484301194776325,2.207135330423002,False,False,stable_non_signal
+Pruritus,18,2,2.5793577443363005,0.7044635564310768,False,False,stable_non_signal
+Anaphylactic reaction,1,1,0.3748221635221817,0.34053325901151993,False,False,stable_non_signal
+Chills,6,1,1.121019321680688,0.4086399108138239,False,False,stable_non_signal
+Decreased appetite,1,1,0.46594865281885883,0.8986821942997243,False,False,stable_non_signal
+Erythema,5,1,2.7316471817647443,0.6773850773850774,False,False,stable_non_signal
+Flushing,2,1,0.861631721800755,1.0971266087997606,False,False,stable_non_signal
+Hot flush,2,1,2.982679467636545,2.4897266089319072,False,False,stable_non_signal
+Hyperhidrosis,5,1,1.8766756332912298,0.7405424516389717,False,False,stable_non_signal
+Hypoaesthesia,2,1,1.4306592438663555,0.7843158232587998,False,False,stable_non_signal
+Irritability,1,1,1.078903922302047,1.528246820929748,False,False,stable_non_signal
+Muscle spasms,1,1,0.869003095846579,1.4515394515394515,False,False,stable_non_signal
+Oropharyngeal pain,1,1,0.9483311792848559,1.4820580208228042,False,False,stable_non_signal
+Somnolence,2,1,1.1240056436441817,1.2114351813599935,False,False,stable_non_signal
+Syncope,2,1,0.703765401717168,0.5656199367332768,False,False,stable_non_signal
+Tachycardia,1,1,0.37875621744121024,0.5216679712516902,False,False,stable_non_signal
+Tinnitus,1,1,1.1533110893573606,1.4027937236892463,False,False,stable_non_signal
+Visual impairment,1,1,0.7622495193140086,1.7062725474223206,False,False,stable_non_signal

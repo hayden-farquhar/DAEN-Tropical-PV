@@ -1,6 +1,9 @@
-# Drug-Role-Stratified Disproportionality Analysis of Australian Antivenoms and Tropical Medicines in the TGA DAEN
+# Disproportionality and Temporal Analysis of Australian Antivenoms, Tropical Medicines and Japanese Encephalitis Vaccine in the TGA DAEN
 
-Code repository for: **Drug-Role-Stratified Disproportionality Analysis of Australian Antivenoms and Tropical Medicines in the TGA Database of Adverse Event Notifications: A Pre-Registered READUS-PV-Compliant Framework**
+Code repository for two papers built on the same pre-registered DAEN pipeline:
+
+1. **Drug-Role-Stratified Disproportionality Analysis of Australian Antivenoms and Tropical Medicines in the TGA Database of Adverse Event Notifications: A Pre-Registered READUS-PV-Compliant Framework** (scripts 01–09)
+2. **Vaccination errors surface during outbreak-driven mass Japanese encephalitis vaccination: a within-product temporal analysis of Australian adverse event reports** (scripts 01–02, 07, 10–13; see [JEV vaccine temporal analysis](#jev-vaccine-temporal-analysis))
 
 Hayden Farquhar MBBS MPHTM, Independent researcher, Finley, NSW, Australia
 
@@ -9,7 +12,7 @@ Hayden Farquhar MBBS MPHTM, Independent researcher, Finley, NSW, Australia
 
 - **Pre-registration:** https://doi.org/10.17605/OSF.IO/TWGX4
 - **Code archive:** https://doi.org/10.5281/zenodo.20404265
-- **Preprint:** to be posted
+- **Preprint (antivenom and tropical-medicine paper):** https://doi.org/10.5281/zenodo.20411526
 
 ## Overview
 
@@ -67,6 +70,30 @@ python scripts/08_sensitivity.py
 python scripts/09_clinical_review.py
 ```
 
+## JEV vaccine temporal analysis
+
+The Japanese encephalitis (JEV) vaccine paper uses the shared parsing and cleaning steps plus the temporal module, followed by four JEV-specific scripts:
+
+```bash
+python scripts/01_parse_daen.py              # requires DAEN xlsx files in data/raw/
+python scripts/02_clean_daen.py
+python scripts/07_temporal.py                # quarterly series, PELT, Poisson break, PT shift
+python scripts/10_temporal_overdispersion.py # dispersion + quasi-Poisson / negative-binomial refits; per-quarter rates
+python scripts/11_temporal_subperiod.py      # post-2022 sub-period composition (errors vs reactions)
+python scripts/12_figure_jev_temporal.py     # Figure 1
+python scripts/13_figure_jev_pt_shift.py     # Figure 2
+```
+
+The aggregate output tables these steps produce are committed under `outputs/tables/temporal_jev_*.csv`, and the two figures under `outputs/figures/`. Scripts 10, 12 and 13 read only those aggregate tables, so the model refits and both figures can be regenerated without the raw DAEN exports:
+
+```bash
+python scripts/10_temporal_overdispersion.py
+python scripts/12_figure_jev_temporal.py
+python scripts/13_figure_jev_pt_shift.py
+```
+
+Script 11 reads the case-level processed parquet files and therefore needs scripts 01–02 to have been run first. Script 13 checks every count it plots against `temporal_jev_pt_shift.csv` and the 136 pre-2022 / 18 post-2022 quarter split against `temporal_jev_quarterly.csv`, and stops if either differs. Running the full sequence from the 25 May 2026 DAEN export reproduces the committed tables byte-for-byte and the committed figures pixel-for-pixel.
+
 ## Script Descriptions
 
 | Script | Description | Inputs | Outputs |
@@ -80,8 +107,14 @@ python scripts/09_clinical_review.py
 | `07_temporal.py` | JEV quarterly aggregation, PELT change-point detection, Poisson structural break, time-period-stratified disproportionality, antivenom descriptive time-series | `daen_cases.parquet`, `daen_case_drugs.parquet`, `daen_case_reactions.parquet` | `temporal_jev_*.csv`, `temporal_antivenom_yearly.csv`, `temporal_drugrole_yearly.csv` |
 | `08_sensitivity.py` | Six feasible pre-registered sensitivity analyses (S3–S8); signal robustness comparison | `signals_full_scan.csv`, `daen_*.parquet` | `sensitivity_S*.csv`, `sensitivity_comparison.csv` |
 | `09_clinical_review.py` | Blinded pharmacological plausibility rating (Established / Plausible novel / Noise) for all 68 signals | `signals_primary.csv` | `clinical_review_log.csv`, `clinical_review_summary.txt` |
+| `10_temporal_overdispersion.py` | JEV structural-break model: dispersion statistics, Poisson / quasi-Poisson / negative-binomial refits, pre/post quarterly means and fold change, per-quarter rates for selected PTs | `temporal_jev_quarterly.csv`, `temporal_jev_pt_shift.csv` | `temporal_jev_poisson_overdispersion.csv`, `temporal_jev_per_quarter_rates.csv` |
+| `11_temporal_subperiod.py` | Split of the post-2022 JEV period (2022–2023, 2024–2026, 2025 alone); share of PT occurrences that are administrative/programmatic errors vs classical reactions | `daen_cases.parquet`, `daen_case_drugs.parquet`, `daen_case_reactions.parquet` | `temporal_jev_subperiod_composition.csv` |
+| `12_figure_jev_temporal.py` | Quarterly JEV vaccine report counts with all PELT change points | `temporal_jev_quarterly.csv`, `temporal_jev_changepoint.csv` | `outputs/figures/figure_jev_temporal.pdf`, `.png` |
+| `13_figure_jev_pt_shift.py` | Per-quarter JEV reporting rates for classical reactions, administrative errors and a population-shift indicator, pre-2022 vs 2022 onwards | `temporal_jev_pt_shift.csv`, `temporal_jev_quarterly.csv` | `outputs/figures/figure_jev_pt_shift.pdf`, `.png` |
 
 ## Outputs
+
+Antivenom and tropical-medicine paper (regenerate by running scripts 01–09):
 
 | File | Paper reference |
 |------|----------------|
@@ -95,6 +128,22 @@ python scripts/09_clinical_review.py
 | `outputs/tables/temporal_jev_pt_shift.csv` | Supplementary Table S5 |
 | `outputs/tables/clinical_review_log.csv` | Section 3.7; Supplementary Table S1 (rating column) |
 
+JEV vaccine paper (committed in this repository):
+
+| File | Paper reference |
+|------|----------------|
+| `outputs/figures/figure_jev_temporal.pdf` | Figure 1 |
+| `outputs/figures/figure_jev_pt_shift.pdf` | Figure 2 |
+| `outputs/tables/temporal_jev_pt_shift.csv`, `temporal_jev_stratified_disp.csv`, `temporal_jev_per_quarter_rates.csv` | Table 1 (counts, per-quarter rates, post-2022 PRR and IC025) |
+| `outputs/tables/temporal_jev_quarterly.csv` | Supplementary Table S1 (full quarterly series, 1988Q1–2026Q2) |
+| `outputs/tables/temporal_jev_changepoint.csv` | Supplementary Table S2 |
+| `outputs/tables/temporal_jev_poisson_overdispersion.csv` (Poisson row also in `temporal_jev_poisson.csv`) | Supplementary Table S3 |
+| `outputs/tables/temporal_jev_pt_shift.csv` | Supplementary Table S4 (full PT-level table, all 187 PTs) |
+| `outputs/tables/temporal_jev_stratified_disp.csv` | Supplementary Table S5 |
+| `outputs/tables/temporal_jev_subperiod_composition.csv` | Supplementary Table S7 |
+
+The committed JEV tables contain aggregate report counts and derived statistics only, computed from publicly released DAEN data (source: Therapeutic Goods Administration, https://aems.tga.gov.au).
+
 ## Citation
 
 If you use this code, please cite:
@@ -105,6 +154,15 @@ Antivenoms and Tropical Medicines in the TGA Database of Adverse Event
 Notifications: A Pre-Registered READUS-PV-Compliant Framework. 2026.
 Code: https://doi.org/10.5281/zenodo.20404265
 Pre-registration: https://doi.org/10.17605/OSF.IO/TWGX4
+```
+
+For the JEV vaccine analysis:
+
+```
+Farquhar H. Vaccination errors surface during outbreak-driven mass Japanese
+encephalitis vaccination: a within-product temporal analysis of Australian
+adverse event reports. 2026.
+Code: https://doi.org/10.5281/zenodo.20404265
 ```
 
 ## License

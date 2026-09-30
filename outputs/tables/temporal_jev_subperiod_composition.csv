@@ -1,0 +1,5 @@
+subperiod,n_reports,pt_occurrences,error_pt,reaction_pt,other_pt,error_pct,reaction_pct,reports_with_error,pct_reports_with_error
+pre_2022,183,496,2,357,137,0.4,72.0,2,1.1
+2022-2023,45,121,29,47,45,24.0,38.8,14,31.1
+2024-2026,72,133,71,36,26,53.4,27.1,56,77.8
+2025-only,45,81,44,22,15,54.3,27.2,37,82.2

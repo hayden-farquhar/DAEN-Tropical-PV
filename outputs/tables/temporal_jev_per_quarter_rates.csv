@@ -1,0 +1,7 @@
+reaction_pt,category,pre_n,post_n,pre_per_quarter,post_per_quarter
+Incorrect route of product administration,error,1,25,0.0074,1.3889
+Contraindication to vaccination,error,1,12,0.0074,0.6667
+Headache,classical,48,7,0.3529,0.3889
+Urticaria,classical,32,3,0.2353,0.1667
+Injection site pain,classical,12,1,0.0882,0.0556
+Vaccination error,error,0,23,0.0,1.2778
